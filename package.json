@@ -1,23 +1,20 @@
 {
   "name": "ivanjeremysapnu_backenddeveloper_gamelibraryexam",
   "version": "1.0.0",
-  "description": "Game Library Backend Developer Exam Submission",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest",
+    "start": "node server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "dotenv": "^17.2.0",
-    "express": "^4.19.2",
-    "express-rate-limit": "^6.8.0",
-    "express-validator": "^7.0.1",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.3.2"
+    "express-validator": "^7.2.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.4.2"
+    "jest": "^30.0.4",
+    "supertest": "^7.1.3"
   }
 }
