@@ -31,33 +31,33 @@ Technologies Used
 Folder Structure
 
 game-library-api/
-│
-├── controllers/
-│ ├── authController.js
-│ └── gameController.js
-│
-├── models/
-│ ├── userModel.js
-│ └── gameModel.js
-│
-├── routes/
-│ ├── authRoutes.js
-│ └── gameRoutes.js
-│
-├── routes/
-│ ├── authRoutes.js
-│ └── gameRoutes.js
-│
-├── middlewares/
-│ ├── auth.js
-│ └── rateLimiter.js
-│
-├── utils/
-│ └── db.js
-│
-├── .env.example
-├── server.js
-└── package.json
+
+controllers/
+authController.js
+gameController.js
+
+models/
+userModel.js
+gameModel.js
+
+routes/
+authRoutes.js
+gameRoutes.js
+
+routes/
+authRoutes.js
+gameRoutes.js
+
+middlewares/
+auth.js
+rateLimiter.js
+
+utils/
+db.js
+
+.env.example
+server.js
+package.json
 
 
 1. Clone the repository
