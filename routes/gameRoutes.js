@@ -7,7 +7,7 @@ const {
     getAllGames,
     searchGames
 } = require('../controllers/gameController');
-const auth = require('../middlewares/auth');
+const auth = require('../middlewares/authMiddleware');
 const { body } = require('express-validator');
 const validateRequest = require('../middlewares/validateRequest');
 
