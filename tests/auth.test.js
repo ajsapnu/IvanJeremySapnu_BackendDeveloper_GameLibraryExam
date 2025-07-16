@@ -11,6 +11,8 @@ describe('Auth Routes', () => {
         const res = await request(app)
             .post('/api/auth/register')
             .send({ email: "test@example.com" });
+            send({ password: "password123" });
+            send({ username: "IvanJeremy" });
 
         expect(res.statusCode).toBe(400);
     });
