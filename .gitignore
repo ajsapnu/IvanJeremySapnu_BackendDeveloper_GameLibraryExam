@@ -8,27 +8,17 @@ node_modules/
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# OS-specific files
+# OS files
 .DS_Store
 Thumbs.db
 
-# IDE/editor folders and settings
+# Editor settings
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# npm package lock
+# npm/yarn lock
 package-lock.json
 
-# Optional: Coverage and test outputs
+# Coverage
 coverage/
-*.lcov
-
-# Optional: Build outputs
-dist/
-build/

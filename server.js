@@ -3,19 +3,24 @@ const express = require('express');
 const connectDB = require('./utils/db');
 const authRoutes = require('./routes/authRoutes');
 const gameRoutes = require('./routes/gameRoutes');
-const errorHandler = require('./middlewares/errorHandler');
+const logger = require('./middlewares/logger');
+const rateLimiter = require('./middlewares/rateLimiter');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(logger);
+app.use(rateLimiter);
+
 app.use('/api/auth', authRoutes);
 app.use('/api/games', gameRoutes);
 
-app.use(errorHandler); // Global error handler
+connectDB();
 
-connectDB(); // connect to the database
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log('Server is running on http://localhost:' + PORT);
-}); // connect to the server
+    console.log(Server is running on http://localhost:${PORT});
+});
+
+module.exports = app; // for Jest tests
