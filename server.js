@@ -14,8 +14,8 @@ app.use('/api/games', gameRoutes);
 
 app.use(errorHandler); // Global error handler
 
-connectDB();
+connectDB(); // connect to the database
 
 app.listen(PORT, () => {
     console.log('Server is running on http://localhost:' + PORT);
-});
+}); // connect to the server
